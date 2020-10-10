@@ -22,14 +22,15 @@ export default class App extends Component {
       <View style={styles.contentWrapper}>
         <TextInput 
         style={styles.input}
-            onChange = {(text) => {
+            placeholder = 'İlk Sayı'
+            onChangeText = {(text) => {
                this.setState({
                  input1: text
                })
             }}
             value = {this.state.input1}
         />
-        <Text style={styles.sampleText}>{this.state.input1}</Text>
+        <Text style={styles.sampleText}>İlk Sayı: {this.state.input1}</Text>
       </View>
 
       <StatusBar style="auto" />
@@ -45,7 +46,16 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },  
   contentWrapper: {
-
+    padding: 20,
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
+  input1: {
+    height: 40,
+  },  
+  sampleText: {
+    height: 30,
+    fontSize: 14,
   },
   header: {
     height:90,
