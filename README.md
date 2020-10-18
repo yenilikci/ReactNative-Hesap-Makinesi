@@ -1,5 +1,10 @@
 # ReactNative-Hesap-Makinesi
 
+Simple calculator created with react native
+
+Usage
+-------
+
     cd ReactNative-Hesap-Makinesi-main
     yarn add expo
     expo start
